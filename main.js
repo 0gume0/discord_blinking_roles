@@ -12,7 +12,7 @@ client.on('message', (message) => {
     if(message.content === "#start" & roles_blinking == false){
         roles_blinking = true;
         let is_blue = false;
-        var role = message.guild.roles.cache.get('854486040537989140')
+        var role = message.guild.roles.cache.get('role id')
         setInterval(() => {
             if(is_blue){
                 role.setColor("#ff0000");
@@ -29,6 +29,6 @@ client.on('message', (message) => {
     }
 })
 
-client.login("ODU0NDgzOTEzODUwMzU1Nzky.YMkmKA.XPjt-1p2a1g69SzV81l2JNOa8To").then(r => {
+client.login("token here").then(r => {
     console.log("Login successfully!");
 });
